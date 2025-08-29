@@ -1,0 +1,138 @@
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+    background-color: #f8f8f8;
+    color: #fff;
+}
+
+nav li {
+    margin-right: 20px;
+}
+
+nav a {
+    color: #f8a390;
+    text-decoration: none;
+    padding: 10px;
+}
+
+header {
+    position: relative;
+}
+
+header img {
+    width: 100%;
+    height: 400px;
+    object-fit: fill;
+}
+
+.hover-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    height: 10%;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    font-size: 24px;
+    font-weight: bold;
+    display: none;
+    justify-content: center;
+    align-items: center;
+}
+
+header:hover .hover-text {
+    display: flex;
+}
+
+#about {
+    text-align: center;
+    padding: 20px;
+    color: blueviolet;
+    background-color: #eff8e1;
+}
+
+#about img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
+
+#work {
+    padding: 20px;
+    background-color: rgb(233, 239, 239);
+}
+
+#work ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+#work li {
+    margin-bottom: 20px;
+    color: #814eba;
+}
+
+#work .project-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+#work .project-image {
+    width: 300px;
+    height: 200px;
+    margin-right: 20px;
+    margin-left: 250px;
+}
+
+#work .project-description {
+    width: 60%;
+}
+
+#contact {
+    padding: 20px;
+    color: rgb(201, 4, 33);
+}
+
+#contact ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+#contact li {
+    margin-bottom: 20px;
+    color: #864356;
+}
+
+#gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+#gallery img {
+    width: 25%;
+    height: 150px;
+    object-fit: cover;
+    margin: 10px;
+}
+
+@media (max-width: 768px) {
+    #gallery img {
+        width: 50%;
+    }
+}
+
+@media (max-width: 480px) {
+    #gallery img {
+        width: 100%;
+    }
+}
