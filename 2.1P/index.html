@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Prathamjosh Sign-Up Page</title>
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Join the Daily Insider by Prathamjosh Singh</h1>
+        <form id="subForm">
+            <input type="email" id="email" placeholder="Enter your email address" required>
+            <button>Subscribe Now</button>
+        </form>
+    </div>
+
+    <script>
+        const form = document.querySelector('#subForm');
+
+        form.addEventListener('submit', async (e) => {
+            e.preventDefault();
+
+            let email = document.querySelector('#email').value;
+
+            try {
+                let r = await fetch('/subscribe', {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify({ email })
+                });
+
+                let res = await r.json();
+                alert(res.message || res.error || 'Unexpected issue, please retry');
+            } catch (err) {
+                console.error(err);
+                alert('Unable to process your request right now');
+            }
+        });
+    </script>
+</body>
+</html>
