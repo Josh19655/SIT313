@@ -1,0 +1,18 @@
+.post-button {
+    background-color: #a24f4f;
+    color: black;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1em;
+    font-weight: bold;
+    border-radius: 4px;
+    cursor: pointer;
+    display: block;
+    margin: 20px 0 0 auto;
+    width: 100px;
+    text-align: center;
+}
+
+.post-button:hover {
+    background-color: #e87f7f;
+}
