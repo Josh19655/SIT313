@@ -1,0 +1,27 @@
+.cards-container {
+    
+    display: flex;
+      
+    flex-direction: column;
+    
+    justify-content: center;
+    
+    align-items: left;
+    
+    text-align: center;
+  
+    }
+    
+    .custom-card {
+      margin: 10px; 
+    }
+   .row{
+    display: flex;
+  
+  
+   }
+   .column{
+  
+    flex:33.33%;
+    padding:5px;
+   }
